@@ -1,0 +1,491 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
+
+/* font-family: 'Fasthand',
+cursive; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+}
+
+body {
+    background-color: #151518;
+}
+
+.introduction {
+    margin: 20px auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: red; */
+}
+
+.introduction .group-img {
+    width: 120%;
+    display: flex;
+    justify-content: center;
+    /* background-color: aqua; */
+}
+
+.introduction .group-img img {
+    width: 400px;
+    height: 450px;
+    border-radius: 5px 30px;
+    filter: drop-shadow(3px 3px 4px #424242);
+}
+
+.intro-letter {
+    line-height: 1.9rem;
+}
+
+.introduction>.intro-letter .one {
+    font-size: 1.3rem;
+    color: #fafafa;
+}
+
+.introduction>.intro-letter .two {
+    font-size: 1.3rem;
+    color: #1de9b6;
+}
+
+.intro-letter .line {
+    width: 70px;
+    height: 2px;
+    background-color: red;
+    margin-top: 10px;
+}
+
+.intro-letter>p {
+    font-size: .8rem;
+    color: #fafafa;
+    line-height: 1.2rem;
+    margin-top: 8px;
+}
+
+.intro-letter .name {
+    font-size: 2rem;
+    color: #1de9b6;
+    font-family: 'Fasthand',
+        cursive;
+    margin-top: 18px;
+}
+
+.intro-letter .social-media {
+    width: 150px;
+    margin-top: 18px;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: burlywood; */
+}
+
+/* second section */
+
+.second {
+    margin-top: 20px;
+    background: linear-gradient(to right, #212121, rgba(29,
+                233,
+                182, 0.2));
+}
+
+.second .second-container {
+    width: 55%;
+    height: 120px;
+    /* background-color: aliceblue; */
+}
+
+
+.second-container i {
+    font-size: 50px;
+    color: #6e6c6c;
+}
+
+/* third section */
+
+.third {
+    margin-top: 30px;
+}
+
+.third .service {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service h5 {
+    color: #1de9b6;
+    font-size: .8rem;
+}
+
+.service h3 {
+    color: #fafafa;
+    font-size: 1.6rem;
+    margin-top: 8px;
+}
+
+.service h3 span {
+    color: #1de9b6;
+}
+
+.service .separated-line {
+    width: 60px;
+    height: 3px;
+    background-color: #1de9b6;
+    margin-bottom: 10px;
+}
+
+.service .explanation {
+    display: flex;
+    justify-content: center;
+}
+
+.service .explanation p {
+    width: 60%;
+    text-align: center;
+    color: #fafafa;
+}
+
+.service-logos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.service-logos .box-container {
+    width: 58%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.service-logos .box-container .box1,
+.box2,
+.box3,
+.box4 {
+    width: 160px;
+    height: 170px;
+    background: linear-gradient(to bottom, #212121, rgba(29,
+                233,
+                182, 0.2));
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+}
+
+
+.box-container .box1 i,
+.box2 i,
+.box3 i,
+.box4 i {
+    font-size: 50px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.box-container .box1 .intro1,
+.box-container .box2 .intro2,
+.box-container .box3 .intro3,
+.box-container .box4 .intro4 {
+    margin-top: 8px;
+    width: 160px;
+    height: 30px;
+    background-color: rgb(118, 116, 116);
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    position: absolute;
+    bottom: 0px;
+    transition: .5s;
+}
+
+.box-container .box1 .intro1 h6,
+.box-container .box2 .intro2 h6,
+.box-container .box3 .intro3 h6,
+.box-container .box4 .intro4 h6 {
+    font-size: 1.1rem;
+    color: #fafafa;
+}
+
+.box-container .box1 .intro1 p,
+.box-container .box2 .intro2 p,
+.box-container .box3 .intro3 p,
+.box-container .box4 .intro4 p {
+    font-size: .8rem;
+    color: #fafafa;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.box-container .box1:hover .intro1,
+.box-container .box2:hover .intro2,
+.box-container .box3:hover .intro3,
+.box-container .box4:hover .intro4 {
+    height: 90px;
+}
+
+.box-container .box1:hover .intro1 p,
+.box-container .box2:hover .intro2 p,
+.box-container .box3:hover .intro3 p,
+.box-container .box4:hover .intro4 p {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* footer section */
+.footer {
+    width: 100%;
+    background-color: #383737;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.footer .first-part {
+    width: 65%;
+    height: 200px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.first-part h5 {
+    color: #1de9b6;
+    font-size: .8rem;
+}
+
+.first-part h3 {
+    color: #fafafa;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.first-part h3 span {
+    color: #1de9b6;
+}
+
+.first-part .separated-line2 {
+    width: 60px;
+    height: 3px;
+    background-color: #1de9b6;
+    margin: 15px auto;
+}
+
+.first-part p {
+    font-size: .7rem;
+    color: #fafafa;
+}
+
+/* second part */
+.footer .second-part {
+    width: 80%;
+}
+
+.second-part .Micheal {
+    width: 50%;
+    background-color: #151518;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    border-radius: 15px;
+}
+
+.second-part .Laura {
+    width: 50%;
+    background-color: #151518;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    position: relative;
+    border-radius: 15px;
+}
+
+.second-part .Laura .profile,
+.second-part .Micheal .profile {
+    width: 30%;
+    height: 100%;
+}
+
+.second-part .Laura img,
+.Micheal img {
+    display: block;
+    width: 30%;
+    height: 120px;
+    position: absolute;
+    left: 0px;
+    bottom: 50px;
+    border-radius: 15px;
+}
+
+.second-part .information {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.second-part .information h3 {
+    color: #fafafa;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.second-part .information h5 {
+    color: #1de9b6;
+    font-size: 1.1rem;
+}
+
+.second-part .information p {
+    color: #746f6f;
+    font-size: .9rem;
+}
+
+.second-part .information .contact {
+    color: #1de9b6;
+    font-size: 1.2rem;
+}
+
+.second-part .information .contact>a {
+    margin-left: 9px;
+}
+
+
+/* responsive */
+@media (max-width : 576px) {
+
+    .introduction {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro-letter {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .intro-letter .line {
+        width: 100%;
+    }
+
+    .introduction .social-media {
+        margin: 20px auto;
+
+    }
+
+    .second-container {
+        width: 70%;
+    }
+
+    .second-container i {
+        font-size: 30px;
+    }
+
+    .second-part {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 80px;
+    }
+
+    .second-part .Micheal {
+        margin-bottom: 20px;
+    }
+
+    .second-part .Micheal,
+    .second-part .Laura {
+        width: 100%;
+    }
+
+    .second-part .Laura {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .second-part .Micheal .information h3 {
+        font-size: 1.1rem;
+    }
+
+    .second-part .Micheal .information h5 {
+        font-size: .8rem;
+    }
+
+    .second-part .Micheal .information p {
+        font-size: .7rem;
+    }
+
+    .second-part .Laura .information h3 {
+        font-size: 1.1rem;
+    }
+
+    .second-part .Laura .information h5 {
+        font-size: .8rem;
+    }
+
+    .second-part .Laura .information p {
+        font-size: .7rem;
+    }
+
+    .service-logos .box-container {
+        width: 100%;
+        justify-content: center;
+    }
+
+}
+
+
+@media(max-width:768px) {
+    .introduction .group-img {
+        margin-right: 30px;
+    }
+
+    .introduction .group-img img {
+        width: 300px;
+    }
+
+    .footer .second-part {
+        flex-direction: column;
+    }
+
+    .second-part .Micheal,
+    .second-part .Laura {
+        width: 100%;
+    }
+
+    .second-part .Micheal .profile img,
+    .second-part .Laura .profile img {
+        bottom: 60px;
+    }
+
+    .second-part .Laura {
+        margin: 30px 0 0 0;
+    }
+
+    .service-logos .box-container {
+        width: 90%;
+    }
+
+    .service-logos .box-container .box1,
+    .box2,
+    .box3,
+    .box4 {
+        margin: 10px;
+    }
+}
+
+
+@media(max-width:1200px) {
+    .introduction .group-img {
+        margin-right: 30px;
+    }
+
+    .service-logos .box-container .box1,
+    .box2,
+    .box3,
+    .box4 {
+        margin: 10px;
+    }
+}

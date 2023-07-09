@@ -4,6 +4,10 @@ const movieContainer = document.querySelector(".movie-container");
 const actionMovies = document.querySelector(".action-movies");
 const comedyMovies = document.querySelector(".comedy-movies");
 const dramaMovies = document.querySelector(".drama-movies");
+const searchBox = document.getElementById("searchBox");
+const resultContainer = document.getElementById("resultContainer");
+const resSearchBar = document.getElementById("resSearchBar");
+const resContainer = document.getElementById("responsiveContainer");
 
 checkBox.addEventListener("change", () => {
     darkModeFunc();
@@ -20,6 +24,7 @@ const darkModeFunc = () => {
 const movieArr = [
     action = [
         {
+            id: 1,
             img: "../images/Batman.jpg",
             title: "Batman-The Dark Knight",
             duration: "2hr 30min",
@@ -27,6 +32,7 @@ const movieArr = [
         },
 
         {
+            id: 2,
             img: "../images/Jamesbond.jpg",
             title: "James Bond-No Time To Die",
             duration: "3hr",
@@ -34,6 +40,7 @@ const movieArr = [
         },
 
         {
+            id: 3,
             img: "../images/Johnwick 4.jpg",
             title: "John Wick 4",
             duration: "3hr 40min",
@@ -41,6 +48,7 @@ const movieArr = [
         },
 
         {
+            id: 4,
             img: "../images/Mission Impossible.jpg",
             title: "Mission Impossible 6-Fallout",
             duration: "2hr 50min",
@@ -48,6 +56,7 @@ const movieArr = [
         },
 
         {
+            id: 5,
             img: "../images/Spiderman.jpg",
             title: "Spiderman-No Way Home",
             duration: "3hr 30min",
@@ -55,6 +64,7 @@ const movieArr = [
         },
 
         {
+            id: 6,
             img: "../images/Uncharted.jpg",
             title: "Uncharted",
             duration: "2hr 20min",
@@ -62,6 +72,7 @@ const movieArr = [
         },
 
         {
+            id: 7,
             img: "../images/Wakanda.jpg",
             title: "Wakanda",
             duration: "2hr 50min",
@@ -69,6 +80,7 @@ const movieArr = [
         },
 
         {
+            id: 8,
             img: "../images/../images/The Mummy.jpg",
             title: "The Mummy",
             duration: "2hr 38min",
@@ -78,6 +90,7 @@ const movieArr = [
 
     comedy = [
         {
+            id: 9,
             img: "../images/Baywatch.jpg",
             title: "Baywatch",
             duration: "2hr 40min",
@@ -85,6 +98,7 @@ const movieArr = [
         },
 
         {
+            id: 10,
             img: "../images/Good Boys.jpg",
             title: "Good Boys",
             duration: "2hr 20min",
@@ -92,6 +106,7 @@ const movieArr = [
         },
 
         {
+            id: 11,
             img: "../images/Madagascar.jpg",
             title: "Madagascar 3-Europe's Most Wanted",
             duration: "2hr 30min",
@@ -99,6 +114,7 @@ const movieArr = [
         },
 
         {
+            id: 12,
             img: "../images/Sausage Party.jpg",
             title: "Sausage Party",
             duration: "2hr 56min",
@@ -106,6 +122,7 @@ const movieArr = [
         },
 
         {
+            id: 13,
             img: "../images/Shaolin Soccer.jpg",
             title: "Shaolin Soccer",
             duration: "2hr 40min",
@@ -113,6 +130,7 @@ const movieArr = [
         },
 
         {
+            id: 14,
             img: "../images/Ghostbuster.jpg",
             title: "The Ghostbuster-AfterLife",
             duration: "2hr 50min",
@@ -120,6 +138,7 @@ const movieArr = [
         },
 
         {
+            id: 15,
             img: "../images/The Mitchells.jpg",
             title: "The Mitchells Vs The Machines",
             duration: "2hr 40min",
@@ -127,6 +146,7 @@ const movieArr = [
         },
 
         {
+            id: 16,
             img: "../images/The Man From Toronto.jpg",
             title: "The Man From Toronto",
             duration: "2hr 45min",
@@ -136,6 +156,7 @@ const movieArr = [
 
     drama = [
         {
+            id: 17,
             img: "../images/Kingdom.jpg",
             title: "Kingdom-Ashin of The North",
             duration: "2hr 50min",
@@ -143,6 +164,7 @@ const movieArr = [
         },
 
         {
+            id: 18,
             img: "../images/Megan.jpg",
             title: "Megan",
             duration: "2hr 47min",
@@ -150,6 +172,7 @@ const movieArr = [
         },
 
         {
+            id: 19,
             img: "../images/Oppenheimer.jpg",
             title: "Oppenheimer",
             duration: "3hr",
@@ -157,6 +180,7 @@ const movieArr = [
         },
 
         {
+            id: 20,
             img: "../images/Peaky Blinders.jpg",
             title: "Peaky Blinders",
             duration: "2hr 55min",
@@ -164,6 +188,7 @@ const movieArr = [
         },
 
         {
+            id: 21,
             img: "../images/The Final Tease.jpg",
             title: "The Final Tease",
             duration: "2hr 33min",
@@ -171,6 +196,7 @@ const movieArr = [
         },
 
         {
+            id: 22,
             img: "../images/The Last Of Us.jpg",
             title: "The Last Of Us",
             duration: "2hr 30min",
@@ -178,6 +204,7 @@ const movieArr = [
         },
 
         {
+            id: 23,
             img: "../images/The Watcher.jpg",
             title: "The Watcher",
             duration: "3hr 10min",
@@ -185,6 +212,7 @@ const movieArr = [
         },
 
         {
+            id: 24,
             img: "../images/Train To Busan.jpg",
             title: "Train To Busan",
             duration: "3hr 38min",
@@ -217,7 +245,7 @@ slicedComedyMovies.forEach((comedy) => {
         <div class="boxes-2">
                             <div class="image-container">
                                 <img src="${comedy[j].img}">
-                                <h4 class="movieTitle">${comedy[j].title}}</h4>
+                                <h4 class="movieTitle">${comedy[j].title}</h4>
                             </div>
                             <div class="aboutMovie">
                                 <p class="duration">${comedy[j].duration}</p>
@@ -243,3 +271,77 @@ slicedDramaMovies.forEach((drama) => {
                         </div> `
     }
 });
+
+let spreadMovieArr = [...action, ...comedy, ...drama];
+// console.log(spreadMovieArr);
+
+let filteredMovies = [];
+
+const searchedMovie = (event) => {
+
+    const searchedValue = event.target.value.toLowerCase();
+
+
+    filteredMovies = spreadMovieArr.filter((movie) => {
+        return movie.title.toLowerCase().includes(searchedValue);
+    });
+
+    resultContainer.style.display = "block";
+
+    if (searchedValue.length === 0) {
+        resultContainer.innerHTML = "";
+        resultContainer.style.display = "none";
+    }
+    const hasToShow = filteredMovies.length > 0;
+    if (hasToShow) {
+        for (let i = 0; i < filteredMovies.length; i++) {
+            resultContainer.innerHTML += `
+        <a href="#" class="linkMovies">
+        <div class="movie-div" id="${filteredMovies[i].id}">
+                    <div class="movie-title">${filteredMovies[i].title}</div>
+                    <div class="movie-image"><img src="${filteredMovies[i].img}" alt="movies' image"></div>
+        </div></a>
+        `
+        };
+    };
+
+};
+
+
+const autoCom = (event) => {
+    const userInput = event.target.value.toLowerCase();
+
+    filteredMovies = spreadMovieArr.filter((item) => {
+        return item.title.toLowerCase().includes(userInput);
+    });
+
+    resContainer.style.display = "block";
+    if (userInput.length === 0) {
+        resContainer.innerHTML = "";
+        resContainer.style.display = "none";
+    }
+    const movieToShow = filteredMovies.length > 0;
+    if (movieToShow) {
+        for (let i = 0; i < filteredMovies.length; i++) {
+            console.log(filteredMovies[i]);
+            resContainer.innerHTML += `
+             <a href="#" class="linkMovies">
+                                        <div class="res-movie-div" id="${filteredMovies[i].id}">
+                                        <div class="res-movie-title">${filteredMovies[i].title}</div>
+                                        <div class="res-movie-image"><img src="${filteredMovies[i].img}" alt="movies' image"></div>
+                                        </div></a>
+            `
+        };
+    };
+};
+
+// const aboutPage = document.getElementById("aboutUs");
+// aboutPage.addEventListener("click", (event) => {
+//     event.preventDefault();
+//     const url = aboutPage.getAttribute(href);
+//     location.href = url;
+// });
+
+searchBox.addEventListener("keyup", searchedMovie);
+resSearchBar.addEventListener("keyup", autoCom);
+

@@ -28,17 +28,28 @@
                     </ul>
                 </div>
             </div>
-            <a href="#">About</a>
+            <a href="../Homepage/about.html" id="aboutUs">About Us</a>
         </div>
 
         <div class="right">
             <div class="input-container">
-                <input type="text" placeholder="Search..." class="search-box form-control">
-                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <div class="search-bar-part">
+                    <input type="text" placeholder="Search..." class="search-box form-control" id="searchBox">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+
+                <div class="result-container" id="resultContainer">
+                    <!-- <a href="#" class="linkMovies">
+                    <div class="movie-div" id="">
+                    <div class="movie-title"></div>
+                    <div class="movie-image"><img src="" alt="movies' image"></div>
+                    </div></a> -->
+                </div>
             </div>
 
             <div class="login">
-                <button class="loginBtn">Login</button>
+                <a class="loginBtn" href="#">Login</a>
             </div>
 
             <div class="switch">
@@ -55,7 +66,7 @@
     <!-- responsive nav -->
     <nav class="navbar fixed-top d-sm-block d-md-block d-lg-none d-xl-none d-xxl-none">
         <div class="container-fluid">
-            <a class="navbar-brand fs-2" href="#">Ez Movie</a>
+            <a class="navbar-brand fs-2" href="#hero">Ez Movie</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
                 aria-label="Toggle navigation">
@@ -71,21 +82,21 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <a class="nav-link active text-dark fs-5" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active text-dark fs-5" aria-current="page" href="#hero">Home</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-dark fs-5" href="#" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Catagories
                             </a>
-                            <ul class="dropdown-menu text-center w-50 border-0">
-                                <li><a class="dropdown-item p-2" href="#">Action</a></li>
-                                <li><a class="dropdown-item p-2" href="#">Drama</a></li>
-                                <li><a class="dropdown-item p-2" href="#">Comedy</a></li>
+                            <ul class="dropdown-menu text-center border-0">
+                                <li><a class="dropdown-item p-2" href="#action">Action</a></li>
+                                <li><a class="dropdown-item p-2" href="#drama">Drama</a></li>
+                                <li><a class="dropdown-item p-2" href="#comedy">Comedy</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark fs-5" href="#">About</a>
+                            <a class="nav-link text-dark fs-5" href="#">About Us</a>
                         </li>
 
 
@@ -100,9 +111,18 @@
 
                     </ul>
                     <form class="d-flex mt-3" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn search-btn" type="submit">Search</button>
+                        <input class="form-control me-2" type="text" placeholder="Search" aria-label="Search"
+                            id="resSearchBar" autocomplete="off">
+
                     </form>
+
+                    <div class="res-search-container" id="responsiveContainer">
+                        <!-- <a href="#" class="linkMovies">
+                                        <div class="res-movie-div" id="">
+                                        <div class="res-movie-title"></div>
+                                        <div class="res-movie-image"><img src="" alt="movies' image"></div>
+                                        </div></a> -->
+                    </div>
                 </div>
             </div>
         </div>
@@ -110,7 +130,7 @@
     <!-- responsive nav -->
 
     <!-- hero image -->
-    <div class="hero-container">
+    <div class="hero-container" id="hero">
 
         <div class="hero-title">
             <h3>Mission Imposible <span>FallOut</span></h3>
@@ -126,7 +146,7 @@
             </div>
         </div>
         <div class="watch">
-            <a href="#">Watch</a>
+            <a href="https://www.youtube.com/watch?v=wb49-oV0F78">Watch</a>
         </div>
     </div>
     <!-- hero image -->
@@ -269,7 +289,7 @@
                 <div class="res-support">
                     <ul>
                         <li class="res-header">Support</li>
-                        <li>Suppoet Request</li>
+                        <li>Support Request</li>
                         <li>Contact</li>
                     </ul>
                 </div>
